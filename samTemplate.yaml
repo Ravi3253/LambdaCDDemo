@@ -13,11 +13,9 @@ Resources:
       Timeout: 30
       Role: 'arn:aws:iam::176812252563:role/lambdasamrole'
       Events:
-        getAZsAPI:
+        getcontent:
           Type: Api
           Properties:
-            Path: /getazs
+            Path: /getcontent
             Method: get
-      Environment:
-        Variables:
-          REGION: us-east-1
+      
